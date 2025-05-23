@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteBox - Online Food Ordering and Devlivering</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/homeStyles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/addToCart.js"></script>
+
+</head>
+
+<body>
+    <div id="date-placeholder"></div>
+    <div id="navbar-placeholder"></div>
+
+    <section id="main-banner">
+        <img src="assets/homebanner.jpg" alt="" id="main-banner-img">
+        <h1>Hungry? <br> Let Us Handle That.</h1>
+    </section>
+
+    <section id="food-cata">
+        <div id="main-cata">
+            <p>Signature <br> <span> Dishes </span></p>
+            <img src="assets/signature g.png" alt="" id="main-cata-img">
+        </div>
+        <div id="snack-cata">
+            <p>Snacks & <br> <span> Sides </span> </p>
+            <img src="assets/snack g.png" alt="" id="snack-cata-img">
+        </div>
+        <div id="dess-cata">
+            <p>Desserts & <br> <span> Beverages </span> </p>
+            <img src="assets/dess g.png" alt="" id="dess-cata-img">
+        </div>
+    </section>
+
+    <section id="top-products">
+        <h1>Top Selling Products</h1>
+        <h3>Loved by thousands. Ordered again and again.</h3>
+
+        <div class="pro-caro">
+            <div class="pro-card" href="face.com" id="1">
+                <img src="assets/blue.jpeg" alt="" class="pro-card-img">
+                <div class="pro-card-rating">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <p class="pro-card-rating-number">4.34</p>
+                </div>
+                <a href="" class="pro-card-name" href="">BlueBerry Shake</a>
+                <div class="pro-card-bottom">
+                    <p class="pro-card-price">LKR.2290</p>
+                    <div class="pro-card-add-to-cart" onclick="addToCart(1, 'BlueBerry Shake', 2290)">
+                        <p>Add</p>
+                        <img src="assets/shopping-bag orange.png" alt="" class="pro-card-add-to-cart-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card" id="2">
+                <img src="assets/red.jpeg" alt="" class="pro-card-img">
+                <div class="pro-card-rating">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <p class="pro-card-rating-number">3.75</p>
+                </div>
+                <a href="" class="pro-card-name">Red Velvet Cake</a>
+                <div class="pro-card-bottom">
+                    <p class="pro-card-price">LKR.1490</p>
+                    <div class="pro-card-add-to-cart" onclick="addToCart(2, 'Red Velvet Cake', 1490)">
+                        <p>Add</p>
+                        <img src="assets/shopping-bag orange.png" alt="" class="pro-card-add-to-cart-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card" id="3">
+                <img src="assets/pasta.jpeg" alt="" class="pro-card-img">
+                <div class="pro-card-rating">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <p class="pro-card-rating-number">4.00</p>
+                </div>
+                <a href="" class="pro-card-name">Spaghetti</a>
+                <div class="pro-card-bottom">
+                    <p class="pro-card-price">LKR.890</p>
+                    <div class="pro-card-add-to-cart" onclick="addToCart(3, 'Spaghetti', 890)">
+                        <p>Add</p>
+                        <img src="assets/shopping-bag orange.png" alt="" class="pro-card-add-to-cart-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card" id="4">
+                <img src="assets/steaks.jpeg" alt="" class="pro-card-img">
+                <div class="pro-card-rating">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <p class="pro-card-rating-number">3.35</p>
+                </div>
+                <a href="" class="pro-card-name">Steaks</a>
+                <div class="pro-card-bottom">
+                    <p class="pro-card-price">LKR.1990</p>
+                    <div class="pro-card-add-to-cart" onclick="addToCart(4, 'Steaks', 1990)">
+                        <p>Add</p>
+                        <img src="assets/shopping-bag orange.png" alt="" class="pro-card-add-to-cart-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card" id="5">
+                <img src="assets/drink.jpeg" alt="" class="pro-card-img">
+                <div class="pro-card-rating">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <img src="assets/star.png" alt="" class="pro-card-rating-star grey-star">
+                    <p class="pro-card-rating-number">3.40</p>
+                </div>
+                <a href="" class="pro-card-name">Mix Fruit Juice</a>
+                <div class="pro-card-bottom">
+                    <p class="pro-card-price">LKR.1690</p>
+                    <div class="pro-card-add-to-cart" onclick="addToCart(5, 'Mix Fruit Juice', 1690)">
+                        <p>Add</p>
+                        <img src="assets/shopping-bag orange.png" alt="" class="pro-card-add-to-cart-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="promotion-banner">
+
+    </section>
+    <section id="reviews">
+
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+section{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#date-placeholder{
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    height: 10vh;
+    width: 50vw;
+
+}
+
+#main-banner{
+    margin-top: 80px;
+    min-height: 90vh;
+}
+
+#main-banner img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+#main-banner h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight:600;
+    font-style: normal;
+}
+
+
+
+/* CATAGORY SECTION */
+#food-cata{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin: 9vh 0;
+}
+
+#food-cata div{
+    width: 25vw;
+    aspect-ratio: 1/1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+#food-cata img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#food-cata img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+#food-cata p{
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 2vw;
+}
+
+#food-cata p span{
+    font-size: 2.1vw;
+    font-weight: 600;
+}
+
+
+
+
+/* TOP PRODUCTS SECTION */
+#top-products{
+}
+
+
+#top-products h1{
+    /* text-align: center; */
+    margin: 5vh 6vw 0vh;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+#top-products h3{
+    margin: 0 6vw 2vh;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.pro-caro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 4vh 5vw;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 2vw;
+    overflow-x: scroll;
+}
+
+.pro-card{
+    /* display: flex; */
+    align-items: center;
+    width: 18vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.pro-card:hover{
+    transform: scale(1.005);
+}
+
+.pro-card-img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit : cover;
+}
+
+.pro-card-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-card-rating-star{
+    width: 1vw;
+    height: 1vw;
+}
+
+.grey-star{
+    filter: grayscale(100%);
+}
+
+.pro-card-rating-number{
+    margin: 0 0.5vw;
+}
+
+.pro-card-name{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 1vh 0 3vh;
+}
+
+.pro-card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 0.6vw 2vh;
+}
+
+
+.pro-card-price{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.pro-card-add-to-cart{
+    background-color: #fe784348;
+    color: #FE7743;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5vh 1vw;
+    font-size: 1vw;
+    /* font-weight: 500; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vw;   
+    /* font-family: "Kanit", sans-serif; */
+
+}
+
+
+.pro-card-add-to-cart:hover{
+    /* background-color: #fe7843; */
+    cursor: pointer;
+}
+
+
+.pro-card-add-to-cart img{
+    width: 1.1vw;
+    margin-left: 0.5vw;
+}
+
+
+
+
+
+
+
+
+
+

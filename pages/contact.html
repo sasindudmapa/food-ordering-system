@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--country code-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="../scripts/navbarAndFooterFetch.js"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+     <div class="head_part">
+        <div class="head_content">
+            <div class="left_image">
+                <img src="../assets/peanut butter cookie.png" width="220px" height="240px" >
+            </div>
+            <div class="head_text">
+                <p>Contact Us</p>
+            </div>
+            <div class="right_image">
+                <img src="../assets/chocolate drink.png" width="250px" height="320px">
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form id="form" onsubmit="return validateForm()">
+
+            <div>
+                <ul>
+                    <li>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name here"><br>
+                        <div class="error" id="error-fname"><small></small></div>
+                    </li>
+                    <li>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name here"><br>
+                        <div class="error" id="error-lname"><small></small></div>
+                    </li>
+                </ul>
+            </div><br><br><br><br>
+            <div class="number_part">
+                <label for="mnumber">Mobile Number</label><br>
+                <input type="text" id="mnumber" name="mnumber" placeholder="Enter your mobile number here"><br>
+                <div class="error" id="error-mnumber"><small></small></div><br>
+            </div>
+            <div class="email_part">
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email here"><br>
+                <div class="error" id="error-email"><small></small></div><br><br>
+            </div>
+            <div class="select_part">
+                <label for="ginquary">General Inquary</label>
+                <select id="ginquary" name="ginquary" >
+                    <option value="hold" disabled selected>Select an option</option>
+                    <option value="issue">Order issue</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="error" id="error-ginquary"><small></small></div><br><br><br>
+            </div>
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" rows="10" cols="30" placeholder="Enter your message here"></textarea><br><br>
+            <small></small>
+            <div class="tc_part">
+                <input type="checkbox" id="tc" name="tc">
+                <label for="tc">I accept terms and conditions</label>
+                <div class="error" id="accept-tc"><small></small></div><br><br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="contact">
+        <p class="sub_title">How can we help you?</p>
+
+        <a href="https://maps.google.com" target="_blank">
+            <div class="contact-icon">
+                <i class="fas fa-map-marker fa-2x"></i>
+            </div>
+            <div class="contact-text1">
+                <p><div class="d_title">Head Office :</div><div class="d_description"><small class="d_description">No 123,James Town</small></div></p>
+            </div>
+        </a>
+        <a href="https://www.truecaller.com" target="_blank">
+            <div class="contact-icon">
+                <i class="fas fa-phone fa-2x"></i>
+            </div>
+            <div class="contact-text2">
+                <p><div class="d_title">Telephone :</div><div class="d_description"><small class="d_description">+94 71654321</small></div></p>
+            </div>
+        </a>
+        <a href="https://mail.google.com" target="_blank">
+            <div class="contact-icon">
+                <i class="fas fa-envelope fa-2x"></i>
+            </div>
+            <div class="contact-text3">
+                <p><div class="d_title">E-mail :</div><div class="d_description"><small class="d_description">fooddelv@gmail.com</small></div></p>
+            </div>
+        </a>
+        <div class="follow-us">
+            <div class="follow_text">
+            <p>Follow Us</p>
+            </div>
+            <div class="social-menu">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fab fa-threads fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="footer-placeholder"></div> -->
+
+    <script src="../scripts/contact.js"></script>
+</body>
+</html>

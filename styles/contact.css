@@ -1,0 +1,229 @@
+
+body {
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.04;
+    z-index: -1;
+}
+.head_part{
+    margin-top: 10vh;
+    height: 325px;
+    background-image: url('../assets/blackbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.head_content{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 500px;
+}
+.left_image{
+    margin-left: 10px;
+    padding: 0px;
+}
+.head_text{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin: 0;
+    text-align: center;
+    color: #e4e4e4;
+}
+.right_image{
+    margin: 0px;
+    padding: 0px;
+}
+.form{
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 140px;
+    margin-right: 100px;
+	border-radius:8px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    float: right;
+    font-size: 18px;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: inline-start;
+    margin: 20px;
+}
+input[name=fname]{
+    background-color: #e4e4e4;
+    border:1px;
+    border-radius:5px;
+    width:300px;
+    padding:10px;}
+input[name=lname]{
+    background-color: #e4e4e4;
+    border:1px;
+    border-radius:5px;
+    width:300px;
+    padding:10px;}
+.number_part{
+    margin-left: 20px;
+}
+input[name=mnumber]{
+    background-color: #e4e4e4;
+    border:1px;
+    border-radius:5px;
+    width: 660px;
+    padding:10px;
+}
+.email_part{
+    margin-left: 20px;
+}
+input[name=email]{
+    background-color: #e4e4e4;
+    border:1px;
+    border-radius:5px;
+    width: 660px;
+    padding:10px;
+}
+label[for="ginquary"]{
+    margin-left: 20px;
+}
+select[id=ginquary]{
+    width: 537px;
+    height: 35px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    margin-left: 10px;
+} 
+label[for=message]{
+    margin-left: 20px;
+}
+textarea[name=message]{
+    background-color: #e4e4e4;
+    border:1px;
+    border-radius:5px;
+    width: 660px;
+    padding:10px;
+    margin-left: 20px;
+}
+.tc_part{
+    margin-left: 20px;
+}
+input[type=submit]{
+    margin-left: 20px;
+    width: 15%;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #fe7743;
+    background-color: #fe7743;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+input[type=submit]:hover{
+    border-color: #fe7743;
+    background-color: #ffffff;
+    color: #fe7743;
+}
+label[for=tc]{
+    margin-left: 20px;
+}
+.error {
+    color: red;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+input.valid {
+    border: 2px solid green;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+.sub_title{
+    font-size: 40px;
+ }
+.contact{
+    padding: 30px;
+    margin: 60px;
+    margin-right: 200px;
+}
+a{
+    text-decoration: none;
+}
+.contact-icon{
+    float: inline-start;
+    margin: 8px;
+    color: rgb(20, 20, 20);
+}
+.contact-icon i {
+    transition: transform 0.3s, color 0.3s;
+}
+.contact-text1{
+    font-size: 25px;
+    margin: 0px 0px 30px 60px;
+    line-height: 1.2;
+}
+.contact-text2{
+    font-size: 25px;
+    margin: 0px 0px 30px 60px;
+    line-height: 1.2;
+}
+.contact-text3{
+    font-size: 25px;
+    margin: 0px 0px 30px 60px;
+    line-height: 1.2;
+}
+.d_title{
+    color: #fe7743;
+    margin: 0px;
+    padding: 0px;
+}
+.d_description{
+    font-size: 17px;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+.follow_text{
+    font-size: 25px;
+}
+.follow-us{
+    margin-top: 80px;
+}
+.follow-us a {
+margin: 0 10px;
+color: #333;
+text-decoration: none;
+}
+.follow-us i {
+transition: color 0.3s;
+}
+
+.follow-us a:hover i {
+    transform: translate(0, -10%);
+}

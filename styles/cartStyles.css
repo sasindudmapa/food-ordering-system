@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#cart-section {
+  max-width: 900px;
+  margin: 16vh auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #333;
+}
+
+.cart-container {
+  overflow-x: auto;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-table th,
+#cart-table td {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+#cart-table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+#cart-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#cart-table tr:hover {
+  background-color: #e8f4fd;
+}
+
+#cart-table tfoot td {
+  font-weight: bold;
+  border-top: 2px solid #333;
+}
+
+button.remove-item {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-item:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  #cart-table th, #cart-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+
+#checkout-button {
+    text-decoration: none;
+  display: block;
+  margin: 15px auto ;
+  padding: 12px 30px;
+  background-color: #FE7743;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#checkout-button:hover {
+  background-color: #e56633;
+  transform: translateY(-2px);
+}
